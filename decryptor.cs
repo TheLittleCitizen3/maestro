@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace Decryptor
 {
     class Program
     {
 
         static void Main(string[] args)
         {
-            string Res = "";
-            foreach (var c in args)
+            string decryptedString = "";
+            foreach (var i in args)
             {
-                string x = _secret(c);
-                x -= 1;
-                Res += (char)x;
+                string secrectChar = _secret(i);
+                secretString -= 1;
+                decryptedString += (char)secretString;
             }
 
-            Console.WriteLine(Res);
+            Console.WriteLine(decryptedString);
         }
     }
 }
